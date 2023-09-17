@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRoverManifest"
+    android:background="@drawable/fondo"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/fondoPrincipal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/titulos1"
+            android:layout_marginTop="15dp"
+            android:text="NASA API"/>
+        <TextView
+            android:id="@+id/txtTi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cursiva"
+            android:text="conection"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un servicio "
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APOD"
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="@font/titulos"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observa la imagen del dia"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonApod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrar"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="162dp"
+                tools:layout_editor_absoluteY="432dp"
+                android:background="@drawable/botones"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FICHA TÉCNICA"
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="@font/titulos"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observa las caracteristicas de los\n
+robots enviados a Marte."
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/buttonRover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrar"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="162dp"
+                tools:layout_editor_absoluteY="432dp"
+                android:background="@drawable/botones"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

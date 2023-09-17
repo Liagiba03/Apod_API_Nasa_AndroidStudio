@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRoverManifest"
+    android:background="@drawable/fondo"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/fondoPrincipal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/titulos1"
+            android:layout_marginTop="15dp"
+            android:text="Mars Rover"/>
+        <TextView
+            android:id="@+id/txtTi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cursiva"
+            android:text="photos"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fondoTab"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:tabTextColor="@color/white"
+                />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+            </androidx.viewpager2.widget.ViewPager2>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
